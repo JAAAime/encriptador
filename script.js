@@ -59,7 +59,7 @@ document.getElementById("copy").onclick = function() {
 }
 document.getElementById("areadetexto").addEventListener("input", (e) => {
     let value = e.target.value;
-    e.target.value = value.replace(/[º*ª"·$%&/()=Ç`>;+¨^:_´}{]/g, " ").replace(/[¬÷“”≠´‚|@#¢∞œæ€®†¥øπå∫∂ƒ™¶§ ~≤ω∑©√ßµ„…?¿!¡.ç'',ω«]/g, " ").replace(/í/g, "i").replace(/á/g, "a").replace(/é/g, "e").replace(/ó/g, "o").replace(/ú/g, "u");
+    e.target.value = value.replace(/[º*ª"·$%&/()=Ç`>;+¨^:_´}{]/g, " ").replace(/[¬÷“”≠´‚|@#¢∞œæ€®†¥øπå∫∂ƒ™¶§ ~≤ω∑©√ßµ„…?¡¿!.ç'',ω«]/g, " ").replace(/í/g, "i").replace(/á/g, "a").replace(/é/g, "e").replace(/ó/g, "o").replace(/ú/g, "u");
   });
   function colocarFocus(){
     document.getElementById("areadetexto").focus();
